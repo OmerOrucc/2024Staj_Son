@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#yeniIlanEkleBtn').click(function () {
+                $.ajax({
+                    url: '/Product/UrunEkleForm', // Modal içeriği için istek
+                    type: 'GET', // GET isteği kullan
+                    success: function (response) {
+                        $('#modalBodyContent').html(response); // Modal içeriğini güncelle
+                        $('#urunEkleModal').modal('show'); // Modalı göster
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Hata:', error); // Hata yönetimi
+                    }
+                });
+            });
+
+            // Modal formu submit edildiğinde
+            $(document).on('submit', '#urunEkleForm', function (event) {
+                event.preventDefault(); // Formun sayfayı yenilemesini engelle
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("AddProduct", "Product")', // Form verilerini gönder
+                    data: new FormData(this), // FormData kullanarak veri gönder
+                    processData: false, // Veri işleme
+                    contentType: false, // İçerik tipi
+                    success: function () {
+                        $('#urunEkleModal').modal('hide'); // Modalı kapat
+                        loadProducts(); // Ürünleri güncelle
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Hata:', error); // Hata yönetimi
+                    }
+                });
+            });
+
+            function loadProducts() {
+                $.get('@Url.Action("GetProducts", "Product")', function (data) {
+                    $("#productList").html(data); // Ürün listesini güncelle
+                });
+            }
+
+            loadProducts(); // Sayfa yüklendiğinde ürünleri çek
+        });
+    </script>
+}

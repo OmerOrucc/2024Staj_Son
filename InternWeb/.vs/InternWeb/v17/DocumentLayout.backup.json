@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\internweb\\internweb\\views\\account\\urunler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\views\\account\\urunler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\internweb\\internweb\\views\\account\\urunekleform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\views\\account\\urunekleform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\internweb\\internweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\internweb\\internweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\internweb\\internweb\\models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UrunEkleForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "RelativeDocumentMoniker": "InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "RelativeToolTip": "InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAIBJwFIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T07:59:55.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "kategori.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Models\\kategori.cs",
+              "RelativeDocumentMoniker": "InternWeb\\Models\\kategori.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Models\\kategori.cs",
+              "RelativeToolTip": "InternWeb\\Models\\kategori.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:17:02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Program.cs",
+              "RelativeDocumentMoniker": "InternWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Program.cs",
+              "RelativeToolTip": "InternWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T13:39:59.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "InternWeb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "InternWeb\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAowEoBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:45:39.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Urunler.cshtml",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Views\\Account\\Urunler.cshtml",
+              "RelativeDocumentMoniker": "InternWeb\\Views\\Account\\Urunler.cshtml",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\InternWeb\\InternWeb\\Views\\Account\\Urunler.cshtml",
+              "RelativeToolTip": "InternWeb\\Views\\Account\\Urunler.cshtml",
+              "ViewState": "AgIAANEBAAAAAAAAAAAAAN0BAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T12:46:43.432Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

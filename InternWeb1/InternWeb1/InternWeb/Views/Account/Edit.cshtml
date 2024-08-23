@@ -1,0 +1,134 @@
+﻿@* @model InternWeb.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Ürünü Düzenle";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Layout dosyasını belirtiyoruz
+}
+
+<div class="container">
+    <h1>Ürünü Düzenle</h1>
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input asp-for="Id" type="hidden" />
+
+        <div class="form-group">
+            <label asp-for="KategoriId">Kategori ID</label>
+            <input asp-for="KategoriId" class="form-control" />
+            <span asp-validation-for="KategoriId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UrunAdi">Ürün Adı</label>
+            <input asp-for="UrunAdi" class="form-control" />
+            <span asp-validation-for="UrunAdi" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UrunAciklama">Ürün Açıklama</label>
+            <textarea asp-for="UrunAciklama" class="form-control"></textarea>
+            <span asp-validation-for="UrunAciklama" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UrunFiyat">Ürün Fiyat</label>
+            <input asp-for="UrunFiyat" type="number" step="0.01" class="form-control" />
+            <span asp-validation-for="UrunFiyat" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UrunStok">Ürün Stok</label>
+            <input asp-for="UrunStok" type="number" class="form-control" />
+            <span asp-validation-for="UrunStok" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UrunGorsel">Ürün Görseli</label>
+            <input type="file" id="urunGorsel" class="form-control" />
+            <input type="hidden" asp-for="UrunGorsel" id="urunGorselBase64" />
+            <span asp-validation-for="UrunGorsel" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UrunDurum">Ürün Durum</label>
+            <select asp-for="UrunDurum" class="form-control">
+                <option value="true">Aktif</option>
+                <option value="false">Pasif</option>
+            </select>
+            <span asp-validation-for="UrunDurum" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Güncelle</button>
+        <a asp-controller="Account" asp-action="Urunler" class="btn btn-secondary btn-block">Listeye Dön</a>
+    </form>
+</div> *@
+
+@* <!-- Başarı Modal'ı -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Başarılı</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @TempData["SuccessMessage"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hata Modal'ı -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Hata</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @TempData["ErrorMessage"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div> *@
+
+@* @section Scripts {
+    <script>
+        document.getElementById('urunGorsel').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const base64String = e.target.result;
+                    document.getElementById('urunGorselBase64').value = base64String;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var successMessage = '@TempData["SuccessMessage"]';
+            var errorMessage = '@TempData["ErrorMessage"]';
+
+            if (successMessage) {
+                var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                successModal.show();
+            }
+
+            if (errorMessage) {
+                var errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+                errorModal.show();
+            }
+        });
+    </script>
+}
+
+ *@
+

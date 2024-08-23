@@ -1,0 +1,46 @@
+﻿@model List<InternWeb.ViewModels.ProductViewModel>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Ürün Adı</th>
+                <th>Açıklama</th>
+                <th>Fiyat</th>
+                <th>Stok</th>
+                <th>Durum</th>
+                <th>Görsel</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.UrunAdi</td>
+                    <td>@item.UrunAciklama</td>
+                    <td>@item.UrunFiyat</td>
+                    <td>@item.UrunStok</td>
+                    <td>@(item.UrunDurum == "1" ? "Aktif" : "Pasif")</td>
+                    <td><img src="@item.UrunGorsel" alt="Ürün Görseli" width="100" /></td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a href="/Account/Edit/@item.Id" class="btn btn-primary mx-2">
+                                <i class="bi bi-pencil-square"></i> Düzenle
+                            </a>
+                            <a href="/Account/Delete/@item.Id" class="btn btn-danger mx-2">
+                                <i class="bi bi-trash3-fill"></i> Sil
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Görüntülenecek ürün yok.</p>
+}
+

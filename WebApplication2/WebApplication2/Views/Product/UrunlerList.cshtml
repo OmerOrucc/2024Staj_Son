@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- jQuery (eğer kullanıyorsanız) -->
+<script src="~/js/datatables/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap 5 JS -->
+<script src="~/js/bootstrap.min.js"></script>
+
+<div class="container">
+    <!-- Ürün Ekleme Butonu -->
+    <div class="d-flex justify-content-start">
+        <!-- Yeni İlan Ekle Butonu -->
+        <a onclick="showInPopup('@Url.Action("UrunEkleForm","Product",new {id=0},Context.Request.Scheme)','Yeni Ekle')" class="btn btn-info text-white"><i class="fas fa-pencil-alt"></i>Yeni Ekle</a>
+    </div>
+
+</div>
+
+<div id="divDataTable"></div>
+
+
+
+@Html.Partial("UrunlerForm")
+
+@section Scripts {
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            RefreshGrid();
+        });
+
+        function RefreshGrid() {
+            $.ajax({
+                url: "@Url.Action("UrunlerGridView", "Product")",
+                success: function (result) {
+                    $('#divDataTable').html(result);
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error: ", status, error);
+                }
+            });
+        }
+    </script>
+}

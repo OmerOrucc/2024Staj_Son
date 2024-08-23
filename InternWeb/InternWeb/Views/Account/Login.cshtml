@@ -1,0 +1,94 @@
+﻿@model InternWeb.ViewModels.LoginPage
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Layout dosyasını belirtiyoruz
+}
+
+<div class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="#"><b>InternWeb</b>Admin</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Oturumunuzu başlatmak için giriş yapın</p>
+
+                <form asp-action="Login" method="post">
+                    <div class="input-group mb-3">
+                        <input asp-for="Username" class="form-control" placeholder="Email" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input asp-for="Password" type="password" class="form-control" placeholder="Şifre" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">
+                                    Beni hatırla
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+                <p class="mb-0">
+                    <a href="@Url.Action("Register", "Account")" class="text-center">Yeni kullanıcı oluştur</a>
+                </p>
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Giriş Hatası</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @TempData["ErrorMessage"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var errorMessage = '@TempData["ErrorMessage"]';
+            if (errorMessage) {
+                var modal = new bootstrap.Modal(document.getElementById('errorModal'));
+                modal.show();
+            }
+        });
+    </script>
+}
+
+
+
+
+

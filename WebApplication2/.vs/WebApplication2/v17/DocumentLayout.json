@@ -1,0 +1,201 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\WebApplication2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\views\\product\\urunlerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\product\\urunlerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\models\\dbsahibindencontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\dbsahibindencontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\views\\product\\urunekleform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\product\\urunekleform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\views\\product\\urunlergridview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\product\\urunlergridview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\wwwroot\\pages\\tables\\data.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\wwwroot\\pages\\tables\\data.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|c:\\users\\user\\source\\repos\\webapplication2\\webapplication2\\views\\product\\urunlerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82E32734-F503-4D58-AD43-FFFC9411EBAA}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\product\\urunlerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DBsahibindenContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Models\\DBsahibindenContext.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\DBsahibindenContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Models\\DBsahibindenContext.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\DBsahibindenContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:37:22.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:37:10.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:37:08.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs",
+              "RelativeToolTip": "WebApplication2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:21:42.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UrunlerGridView.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunlerGridView.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Product\\UrunlerGridView.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunlerGridView.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Product\\UrunlerGridView.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAADsAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T05:29:41.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "data.html",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\pages\\tables\\data.html",
+              "RelativeDocumentMoniker": "WebApplication2\\wwwroot\\pages\\tables\\data.html",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\pages\\tables\\data.html",
+              "RelativeToolTip": "WebApplication2\\wwwroot\\pages\\tables\\data.html",
+              "ViewState": "AQIAAOQGAAAAAAAAAAAAAO4GAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-06T05:10:32.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UrunlerList.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunlerList.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Product\\UrunlerList.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunlerList.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Product\\UrunlerList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T13:26:11.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication2\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\appsettings.json",
+              "RelativeToolTip": "WebApplication2\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-07T05:40:56.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UrunEkleForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunEkleForm.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Product\\UrunEkleForm.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunEkleForm.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Product\\UrunEkleForm.cshtml",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwEEAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T12:41:08.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UrunlerForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunlerForm.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Product\\UrunlerForm.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Product\\UrunlerForm.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Product\\UrunlerForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T11:00:24.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAAAMcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T06:06:09.999Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

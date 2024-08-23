@@ -1,0 +1,130 @@
+﻿@model IEnumerable<FinalProject.Models.Urunler>
+
+
+@{
+    Layout = null;
+}
+
+<table id="productsTable" class="display table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Kategori ID</th>
+            <th>Ürün Adı</th>
+            <th>Ürün Açıklama</th>
+            <th>Ürün Fiyat</th>
+            <th>Ürün Stok</th>
+            <th>Ürün Durum</th>
+            <th>Ürün Görsel</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.KategoriId</td>
+                <td>@product.UrunAdi</td>
+                <td>@product.UrunAciklama</td>
+                <td>@product.UrunFiyat</td>
+                <td>@product.UrunStok</td>
+                <td>@(product.UrunDurum == "1" ? "Aktif" : "Pasif")</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(product.UrunGorsel))
+                    {
+                        <img src="@product.UrunGorsel" alt="Ürün Görseli" style="max-width: 100px; max-height: 100px;" />
+                    }
+                    else
+                    {
+                        <span>Görsel yok</span>
+                    }
+                </td>
+
+                <td>
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn btn-success ms-2 edit-product" data-id="@product.Id">Düzenle</a>
+                        <button type="button" class="btn btn-danger mx-2 delete-product" data-id="@product.Id"><i class="bi bi-trash3-fill"></i> Sil</button>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $('#productsTable').DataTable({
+            dom: 'Bfrtip',
+            buttons: ['pdf', 'excel'],
+            pageLength: 25,
+            bLengthChange: false,
+            ordering: false
+        });
+    });
+    //Düzenle
+    $(document).on('click', '.edit-product', function (event) {
+        event.preventDefault(); // Linkin varsayılan davranışını engelle
+        var productId = $(this).data('id'); // Butondan id'yi al
+
+        console.log('Edit butonuna tıklandı. ID: ', productId); // Debug: ID'yi kontrol et
+
+        $.ajax({
+            url: '/Product/UrunEkleForm', // AJAX isteği yapılacak URL
+            type: 'GET', // GET isteği
+            data: { id: productId }, // ID'yi veri olarak gönder
+            success: function (response) {
+                $('#modalBodyContent').html(response); // Modal içeriğini güncelle
+                $('#urunEkleModal').modal('show'); // Modalı göster
+            },
+            error: function (xhr, status, error) {
+                console.error('Hata:', error); // Hata yönetimi
+            }
+        });
+    });
+
+    // Ürün silme işlemi
+    $('#productsTable').on('click', '.delete-product', function () {
+        var id = $(this).data('id');
+        if (confirm('Bu ürünü silmek istediğinizden emin misiniz?')) {
+            $.ajax({
+                url: '@Url.Action("Delete", "Product")',
+                type: 'POST',
+                data: { id: id },
+                success: function (result) {
+                    if (result.success) {
+                        alert('Ürün başarıyla silindi.');
+                        location.reload();
+                    } else {
+                        alert('Ürün silinirken bir hata oluştu.');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('Bir hata oluştu: ' + error);
+                }
+            });
+        }
+    });
+    // Modal açılmadan önce içerik yükleme
+    $('#urunEkleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var id = button.data('id');
+        $.ajax({
+            url: '@Url.Action("UrunEkleForm", "Product")',
+            type: 'GET',
+            data: { id: id },
+            success: function (data) {
+                $('#urunEkleModal .modal-body').html(data);
+            },
+            error: function (xhr, status, error) {
+                alert('Bir hata oluştu: ' + error);
+            }
+        });
+    });
+    $('#urunEkleModal').on('hidden.bs.modal', function () {
+        $(this).find('.modal-body').html('');
+        $(this).find('.modal-title').html('');
+    });
+</script>

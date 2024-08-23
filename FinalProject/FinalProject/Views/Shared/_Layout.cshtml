@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Muhtar Web" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../images/favicon.ico">
+    <title>Muhtarlık</title>
+
+    <!-- CSS Dosyaları -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/neon-core.css" rel="stylesheet" />
+    <link href="~/css/neon-forms.css" rel="stylesheet" />
+    <link href="~/css/neon-theme.css" rel="stylesheet" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <link href="~/css/wopro.css" rel="stylesheet" />
+    <link href="~/css/sweetalert.css" rel="stylesheet" />
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/DataTables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Content/DataTables/css/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="~/content/datatables/css/toastr.min.css" rel="stylesheet" />
+
+    @RenderSection("Styles", required: false)
+
+    <style>
+        .modal-dialog {
+            position: absolute;
+            top: -6%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    </style>
+
+    <!-- jQuery -->
+    <script src="~/js/jquery-1.11.3.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- Diğer JavaScript Dosyaları -->
+    <script src="~/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+    <script src="~/js/jquery.inputmask.bundle.js"></script>
+    <script src="~/js/toastr.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/gsap/TweenMax.min.js"></script>
+    <script src="~/js/joinable.js"></script>
+    <script src="~/js/resizeable.js"></script>
+    <script src="~/js/neon-api.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/js/sweetalert.min.js"></script>
+    <script src="~/js/sweetalert-dev.js"></script>
+    <script src="~/js/neon-custom.js"></script>
+    <script src="~/js/neon-demo.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <script src="~/js/datatables/Buttons-1.0.3/js/dataTables.buttons.min.js"></script>
+    <script src="~/js/datatables/Buttons-1.0.3/js/buttons.flash.min.js"></script>
+    <script src="~/js/datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="~/js/datatables/pdfmake-0.1.18/build/pdfmake.min.js"></script>
+    <script src="~/js/datatables/pdfmake-0.1.18/build/vfs_fonts.js"></script>
+    <script src="~/js/datatables/Buttons-1.0.3/js/buttons.html5.min.js"></script>
+    <script src="~/js/datatables/Buttons-1.0.3/js/buttons.print.min.js"></script>
+</head>
+<body class="page-body page-fade white" data-url="">
+    <div class="page-container">
+        @Html.Partial("_LeftMenu")
+
+        <div class="main-content">
+            <div class="row">
+                @Html.Partial("_Header")
+            </div>
+            <hr />
+            @RenderBody()
+            <br />
+        </div>
+    </div>
+
+    <!-- Modal Yapısı -->
+    <div class="modal" id="form-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div id="divContent" class="modal-body">
+                    <!-- İçerik buraya yüklenecek -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

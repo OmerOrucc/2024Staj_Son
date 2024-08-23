@@ -1,0 +1,99 @@
+﻿@model WebApplication2.ViewModels.ProductViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+
+    <div class="modal-body">
+        <!-- Ürün ekleme formu -->
+        <form id="urunEkleForm" enctype="multipart/form-data" method="post" action="/Product/UrunEkle">
+            @* <div class="form-group">
+            <label for="KategoriId">Kategori</label>
+            <select class="form-control" id="KategoriId" name="KategoriId" required>
+            <option value="">-- Kategori Seçin --</option>
+            @foreach (var category in ViewBag.CategoryList)
+            {
+            <option value="@category.Value">@category.Text</option>
+            }
+            </select>
+            </div> *@
+            <div class="form-group">
+                <label for="urunAdi">Ürün Adı</label>
+                <input type="text" class="form-control" id="UrunAdi" name="UrunAdi" required>
+            </div>
+            <div class="form-group">
+                <label for="urunAciklama">Ürün Açıklama</label>
+                <textarea class="form-control" id="UrunAciklama" name="UrunAciklama" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="urunFiyat">Ürün Fiyat</label>
+                <input type="number" class="form-control" id="UrunFiyat" name="UrunFiyat" required>
+            </div>
+            <div class="form-group">
+                <label for="urunStok">Ürün Stok</label>
+                <input type="number" class="form-control" id="UrunStok" name="UrunStok" required>
+            </div>
+            <div class="form-group">
+                <label for="urunGorsel">Ürün Görsel</label>
+                <input type="file" class="form-control" id="UrunGorsel" name="UrunGorsel" required>
+                <input type="hidden" name="UrunGorsel" id="urunGorselBase64" />
+            </div>
+            <div class="form-group">
+                <label for="urunDurum">Ürün Durum</label>
+                <select class="form-control" id="UrunDurum" name="UrunDurum" required>
+                    <option value="true">Aktif</option>
+                    <option value="false">Pasif</option>
+                </select>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Kapat</button>
+                <button type="submit" class="btn btn-primary">Ekle</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- jQuery (eğer kullanıyorsanız) -->
+    <script src="~/js/datatables/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Dosya seçildiğinde Base64 formatına dönüştür
+            $('#urunGorsel').on('change', function (event) {
+                var file = event.target.files[0];
+                var reader = new FileReader();
+
+                reader.onloadend = function () {
+                    var base64String = reader.result.split(',')[1];
+                    $('#urunGorselBase64').val(base64String); // Görsel Base64 stringini form verisine ekle
+                };
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+        // $('.btn-close').on('click', function () {
+
+        //     $('.modal.fade.show').hide();
+        //     $('.modal-backdrop.fade.show').hide();
+        // })
+
+    </script>
+
+
+
+
+    
+</body>
+</html>

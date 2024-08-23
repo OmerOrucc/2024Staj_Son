@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DevineWebRazor_Temp.props" />
+</Project>

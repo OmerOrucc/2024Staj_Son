@@ -1,0 +1,114 @@
+﻿@model InternWeb.ViewModels.ProductViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Modal HTML yapısı -->
+ @*    <div class="modal fade" id="urunEkleModal" tabindex="-1" aria-labelledby="urunEkleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ürün Ekle</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> *@
+                <div class="modal-body">
+                    <!-- Ürün ekleme formu -->
+                    <form id="urunEkleForm" enctype="multipart/form-data" method="post" action="/Account/UrunEkle">
+                        <div class="form-group">
+                            <label for="KategoriId">Kategori</label>
+                            <select class="form-control" id="KategoriId" name="KategoriId" required>
+                                <option value="">-- Kategori Seçin --</option>
+                                @foreach (var category in ViewBag.CategoryList)
+                                {
+                                    <option value="@category.Value">@category.Text</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="urunAdi">Ürün Adı</label>
+                            <input type="text" class="form-control" id="urunAdi" name="UrunAdi" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="urunAciklama">Ürün Açıklama</label>
+                            <textarea class="form-control" id="urunAciklama" name="UrunAciklama" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="urunFiyat">Ürün Fiyat</label>
+                            <input type="number" class="form-control" id="urunFiyat" name="UrunFiyat" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="urunStok">Ürün Stok</label>
+                            <input type="number" class="form-control" id="urunStok" name="UrunStok" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="urunGorsel">Ürün Görsel</label>
+                            <input type="file" class="form-control" id="urunGorsel" name="UrunGorsel" required>
+                            <input type="hidden" name="UrunGorsel" id="urunGorselBase64" />
+                        </div>
+                        <div class="form-group">
+                            <label for="urunDurum">Ürün Durum</label>
+                            <select class="form-control" id="urunDurum" name="UrunDurum" required>
+                                <option value="true">Aktif</option>
+                                <option value="false">Pasif</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Kapat</button>
+                            <button type="submit" class="btn btn-primary">Ekle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (eğer kullanıyorsanız) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Dosya seçildiğinde Base64 formatına dönüştür
+            $('#urunGorsel').on('change', function (event) {
+                var file = event.target.files[0];
+                var reader = new FileReader();
+
+                reader.onloadend = function () {
+                    var base64String = reader.result.split(',')[1];
+                    $('#urunGorselBase64').val(base64String); // Görsel Base64 stringini form verisine ekle
+                };
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+            // $('.btn-close').on('click', function () {
+
+            //     $('.modal.fade.show').hide();
+            //     $('.modal-backdrop.fade.show').hide();
+            // })
+
+        </script>
+
+
+    <script src="https://ddei5-0-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fcode.jquery.com%2fjquery%2d3.6.0.min.js&umid=6DB5B853-1DE4-E906-8D7D-F2DAC02DA0A1&auth=414eb4d17bd52daab8ebdebbdf7e1a95c2eb82d9-972292ca308afd005379e1cc9d7201f58923cb2c"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ddei5-0-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fcode.jquery.com%2fui%2f1.12.1%2fjquery%2dui.min.js&umid=6DB5B853-1DE4-E906-8D7D-F2DAC02DA0A1&auth=414eb4d17bd52daab8ebdebbdf7e1a95c2eb82d9-a5038e4fb6185bdefb63661a51b98d3e1621843f"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\4\\internweb1\\internweb\\views\\account\\urunler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\views\\account\\urunler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\4\\internweb1\\internweb\\views\\account\\urunekleform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\views\\account\\urunekleform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\4\\internweb1\\internweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|c:\\users\\omer\\desktop\\staj\\staj\\4\\internweb1\\internweb\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C339D809-6E51-4B15-8A51-EEAC5F24C0D1}|InternWeb\\InternWeb.csproj|solutionrelative:internweb\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Urunler.cshtml",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\Views\\Account\\Urunler.cshtml",
+              "RelativeDocumentMoniker": "InternWeb\\Views\\Account\\Urunler.cshtml",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\Views\\Account\\Urunler.cshtml",
+              "RelativeToolTip": "InternWeb\\Views\\Account\\Urunler.cshtml",
+              "ViewState": "AgIAAO4BAAAAAAAAAAAiwCYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T12:46:43.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "InternWeb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "InternWeb\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAFkBAAAAAAAAAAAAAKMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:45:39.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UrunEkleForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "RelativeDocumentMoniker": "InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "RelativeToolTip": "InternWeb\\Views\\Account\\UrunEkleForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T07:59:55.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\ViewModels\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "InternWeb\\ViewModels\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\Staj\\Staj\\4\\InternWeb1\\InternWeb\\ViewModels\\ProductViewModel.cs",
+              "RelativeToolTip": "InternWeb\\ViewModels\\ProductViewModel.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAABsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T07:29:25.302Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

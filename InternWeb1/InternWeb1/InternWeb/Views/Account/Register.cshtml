@@ -1,0 +1,235 @@
+﻿@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Registration Page</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition register-page">
+    <div class="register-box">
+        <div class="register-logo">
+            <a href="../../index2.html"><b>InternWeb</b>Admin</a>
+        </div>
+
+        <div class="card">
+            <div class="card-body register-card-body">
+                <p class="login-box-msg">Yeni kullanıcı oluştur</p>
+
+                <form action="../../index.html" method="post">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="İsim-Soyisim">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Şifre">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Şifre(tekrar)">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                                <label for="agreeTerms">
+                                    Üyelik koşullarını <a href="#">onaylıyorum</a>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Kayıt ol</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+                <a href="@Url.Action("Login", "Account")" class="text-center">Hesabım var</a>
+            </div>
+            <!-- /.form-box -->
+        </div><!-- /.card -->
+    </div>
+    <!-- /.register-box -->
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+</body>
+</html> *@
+@model InternWeb.ViewModels.RegisterViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InternWeb | Registration Page</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition register-page">
+    <div class="register-box">
+        <div class="register-logo">
+            <a href="../../index2.html"><b>InternWeb</b>Admin</a>
+        </div>
+
+        <div class="card">
+            <div class="card-body register-card-body">
+                <p class="login-box-msg">Yeni kullanıcı oluştur</p>
+
+                <form asp-action="Register" method="post">
+                    <div class="input-group mb-3">
+                        <input asp-for="KullaniciAdi" class="form-control" placeholder="İsim" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.KullaniciAdi)
+                    </div>
+                    <div class="input-group mb-3">
+                        <input asp-for="KullaniciSoyadi" class="form-control" placeholder="Soyisim" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.KullaniciSoyadi)
+                    </div>
+                    <div class="input-group mb-3">
+                        <input asp-for="KullaniciAdres" class="form-control" placeholder="Adres" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.KullaniciAdres)
+                    </div>
+                    <div class="input-group mb-3">
+                        <input asp-for="KullaniciMail" class="form-control" placeholder="Email" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.KullaniciMail)
+                    </div>
+                    <div class="input-group mb-3">
+                        <input asp-for="KullaniciSifre" type="password" class="form-control" placeholder="Şifre" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.KullaniciSifre)
+                    </div>
+                    <div class="input-group mb-3">
+                        <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Şifre (tekrar)" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input asp-for="Terms" type="checkbox" id="agreeTerms" />
+                                <label for="agreeTerms">
+                                    Üyelik koşullarını <a href="#">onaylıyorum</a>
+                                </label>
+                                @Html.ValidationMessageFor(model => model.Terms)
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Kayıt ol</button>
+                        </div>
+                    </div>
+                </form>
+
+                <a href="@Url.Action("Login", "Account")" class="text-center">Hesabım var</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kayıt Başarılı Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Kayıt Başarılı</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Kayıt işleminiz başarılı bir şekilde tamamlandı!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                var successMessage = '@TempData["SuccessMessage"]';
+                if (successMessage) {
+                    var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                    successModal.show();
+                }
+            });
+        </script>
+    }
+</body>
+</html>
+
+
+
